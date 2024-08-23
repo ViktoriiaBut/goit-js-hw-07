@@ -33,7 +33,7 @@ const images = [
   const gallery = document.querySelector(".gallery");
   
   const markup = images
-  .map((img) => `<li class="list-item"><src=${img.url} alt=${img.alt}></li>`) 
+  .map(img => `<li class="img-item"><src=${img.url} alt=${img.alt}></li>`) 
   .join("");
   console.log(markup);
   gallery.innerHTML = markup;
