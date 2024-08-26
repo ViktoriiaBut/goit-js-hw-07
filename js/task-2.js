@@ -30,12 +30,14 @@ const images = [
   
   
 
-  const gallery = document.querySelector(".gallery");
+  const galleryAll = document.querySelector(".gallery");
   
   const markup = images
-  .map(img => `<li class="img-item"><src=${img.url} alt=${img.alt}></li>`) 
+  .map((image) => `<li class="img-item"><img src=${image.url} alt=${image.alt}></li>`) 
   .join("");
-  console.log(markup);
-  gallery.innerHTML = markup;
-
   
+  console.log(markup);
+
+  galleryAll.innerHTML = markup;
+
+
