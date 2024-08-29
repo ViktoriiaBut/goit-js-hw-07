@@ -18,16 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
         item.style.marginBottom = '16px';
         item.style.width = '392px';
         item.style.background = '#F6F6FE';
-        item.style.list = 'none';
+        item.style.listStyle = 'none';
 
     });
-    
-  
-    const listItems = ul.querySelectorAll('li');
-    listItems.forEach(li => {
-        li.style.border = '1px solid #000';
-    });
 
-    
 })
 
