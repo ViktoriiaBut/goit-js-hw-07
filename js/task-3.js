@@ -1,7 +1,7 @@
 
-const input = document.getElementById('name-input');
+const input = docget.ElementById('name-input');
 
-const output = document.getElementById('name-output');
+const output = get.ElementById('name-output');
 
 input.addEventListener('input', () => {
   const trimmedValue = input.value.trim();

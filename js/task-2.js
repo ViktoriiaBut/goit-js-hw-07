@@ -41,3 +41,26 @@ const images = [
   galleryAll.innerHTML = markup;
 
 
+  document.addEventListener("DOMContentLoaded", function() {
+
+    const galleryContainer = document.querySelector(".gallery");
+
+    galleryContainer.style.display = "flex";
+    galleryContainer.style.flexWrap = "wrap";
+    galleryContainer.style.gap = "24px";
+
+    
+
+    const images = galleryContainer.querySelectorAll('li');
+    images.forEach(li => {
+      li.style.width = "calc(33.33% - 24px)";
+      li.style.listStyle = "none";
+      li.style.boxSizing = "border-box";
+
+         });
+    
+  });
+
+
+  
+
